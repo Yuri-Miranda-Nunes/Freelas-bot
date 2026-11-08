@@ -1,0 +1,60 @@
+{
+  "buscas": ["python", "automação", "web scraping", "bot", "api", "django", "flask", "sistema web"],
+  "palavras_chave": ["python", "automação", "automacao", "automation", "scraping", "scraper", "bot", "api", "django", "flask", "fastapi", "integração", "integration", "planilha", "excel", "sql", "dashboard", "crud", "sistema web", "selenium"],
+  "palavras_excluir": ["wordpress", "unity", "blockchain", "smart contract", "aposta", "bet", "cassino", "casino", "trading bot"],
+
+  "plataformas": {
+    "workana": {"ativo": true, "idiomas": ["pt", "en"], "paginas": 1},
+    "99freelas": {"ativo": true, "paginas": 1},
+    "freelancer": {"ativo": true, "limite_por_busca": 30},
+    "upwork": {"ativo": false}
+  },
+  "atraso_entre_requisicoes_seg": 4,
+
+  "orcamento": {
+    "minimo_brl": 200,
+    "ideal_brl": 2500,
+    "valor_hora_referencia_brl": 60
+  },
+
+  "pesos": {
+    "orcamento": 25,
+    "cliente": 25,
+    "dificuldade": 25,
+    "remuneracao": 25
+  },
+
+  "aprovacao": {
+    "nota_minima": 60,
+    "dificuldade_maxima": 8,
+    "intermediario": {
+      "dificuldade_maxima": 6,
+      "orcamento_minimo_brl": 400
+    },
+    "amostras_minimas_media": 5,
+    "dias_media_mercado": 60
+  },
+
+  "ia": {
+    "provedor": "openai_compat",
+    "openai_compat": {
+      "base_url": "http://localhost:3001/v1",
+      "modelo": "auto",
+      "temperatura": 0.3,
+      "timeout_seg": 180,
+      "tentativas_json": 3
+    },
+    "modelo": "claude-opus-5-5",
+    "effort_avaliacao": "medium",
+    "effort_redacao": "medium",
+    "max_avaliacoes_por_rodada": 25
+  },
+
+  "cambio": {
+    "fonte": "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,GBP-BRL",
+    "fallback": {"USD": 5.4, "EUR": 5.9, "GBP": 6.9, "BRL": 1.0}
+  },
+
+  "painel": {"host": "127.0.0.1", "porta": 5000},
+  "notificacao": {"ativo": true}
+}

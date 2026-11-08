@@ -1,0 +1,5 @@
+config/segredos.json
+dados/*.db
+dados/rodada.lock
+logs/
+__pycache__/
